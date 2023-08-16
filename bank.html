@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <header>
+        <h1 class="text-5xl text-center mt-6">
+            Let's get some <span class="font-semibold text-violet-500">Mooooooney</span>
+        </h1>
+    </header>
+    <main>
+        <section class="max-w-screen-2xl mx-auto mt-12 p-8 rounded-md bg-[#cbf4e4]">
+            <div class="grid grid-cols-3 gap-4 mb-14">
+                <div class="bg-[#27BF99] p-4 rounded-lg">
+                    <h1 class="text-3xl font-semibold text-white mb-2">Deposit</h1>
+                    <p class="text-4xl font-semibold text-white mb-2">$<span id="deposit">5</span></p>
+                </div>
+
+                <div class="bg-[#FE81B8] p-4 rounded-lg">
+                    <h1 class="text-3xl font-semibold text-white mb-2">Withdraw</h1>
+                    <p class="text-4xl font-semibold text-white mb-2">$<span id="withdraw">10</span></p>
+                </div>
+
+                <div class="bg-[#FF7F70] p-4 rounded-lg">
+                    <h1 class="text-3xl font-semibold text-white mb-2">Balance</h1>
+                    <p class="text-4xl font-semibold text-white mb-2">$<span id="balance-total">1235</span></p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-blue-400 p-6 rounded-lg">
+                    <h2 class="text-3xl font-semibold text-white mb-6">Please Deposit</h2>
+                    <p>
+                        <input id="want-deposit" class="w-9/12 block border-2 border-sky-400 px-3 py-2 rounded-lg mb-2" type="number" name="" id="" placeholder="Amount you want to Deposit" pattern="[0-9]*">
+                    </p>
+
+                    <button id="btn-deposit" class="border-2 border-[#173685] rounded-2xl font-semibold text-lg text-white bg-[#173685] px-8 py-3 mt-3 hover:bg-sky-700 hover:border-white">Deposit</button>
+                </div>
+                <div class="bg-purple-400 p-6 rounded-lg">
+                    <h2 class="text-3xl font-semibold text-white mb-6">Withdraw</h2>
+                    <p>
+                        <input id="withdraw-field" class="w-9/12 block border-2 border-sky-400 px-3 py-2 rounded-lg mb-2" type="number" name="" id="" placeholder="Amount you want to Withdraw" pattern="[0-9]*">
+                    </p>
+
+                    <button id="btn-withdraw" class="border-2 border-[#173685] rounded-2xl font-semibold text-lg text-white bg-[#173685] px-8 py-3 mt-3 hover:bg-sky-700 hover:border-white">Withdraw</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="js/calculation.js"></script>
+</body>
+</html>
